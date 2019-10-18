@@ -30,6 +30,12 @@ const MenuMonetContainer: React.FC = () => {
     (ramenMenuItems: RamenItems[]): any => ramenMenuItems.map((item: RamenItems) => <div key={item.name}><MenuItem item={item}/></div>)
   );
 
+  const otherThing = Maybe.Some(ramenRestaurant)
+  .flatMap(hasRamen)
+  .map(logMe)
+
+  console.log(otherThing)
+
   return (
     <>
       <div style={{display: 'flex', justifyContent: 'space-around'}}>

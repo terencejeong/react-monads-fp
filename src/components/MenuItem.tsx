@@ -2,8 +2,6 @@ import React from 'react';
 import {RamenItems} from '../types/Restaurant.type';
 import { Maybe } from 'monet';
 
-
-
 const partial = (fn: any, firstArg: any) => {
   return (...lastArgs: any) => {
     return fn(firstArg, ...lastArgs);
