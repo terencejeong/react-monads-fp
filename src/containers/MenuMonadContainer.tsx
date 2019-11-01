@@ -15,7 +15,7 @@ function hasRamen(item: IRestaurant): Maybe<RamenItems[]> {
 }
 
 const MenuMonetContainer: React.FC = () => {
-  const [ ramenRestaurant, setRamenRestaurant ] = useState<any>(restaurant);
+  const [ ramenRestaurant, setRamenRestaurant ] = useState<IRestaurant>(restaurant);
 
   function removeOptions(config: IRestaurant, e: React.SyntheticEvent) {
     e.preventDefault();

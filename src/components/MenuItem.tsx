@@ -16,6 +16,11 @@ function getSizes(item: string[]): Maybe<string[]> {
   return item ? Maybe.Some(item) : Maybe.None()
 }
 
+function willOnlyRunIfValue(item: string[]) {
+  console.log('item', item);
+  return item;
+}
+
 const MenuItem = memo(({ item }: {item: RamenItems}) => {
   const [count, setCount] = useState<number>(0);
 
@@ -35,6 +40,7 @@ const MenuItem = memo(({ item }: {item: RamenItems}) => {
 
   const hasSizes = useMemo(() => {
     return Maybe.fromNull(item.sizes)
+    .map(willOnlyRunIfValue)
     .flatMap(getSizes)
     .cata(
       () => <div>No other sizes</div>,
