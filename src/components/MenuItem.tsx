@@ -13,12 +13,10 @@ function getType(search: string, item: RamenItems) {
 }
 
 function getSizes(item: string[]): Maybe<string[]> {
-  console.log('hi there', item)
   return item ? Maybe.Some(item) : Maybe.None()
 }
 
 const MenuItem = memo(({ item }: {item: RamenItems}) => {
-  console.log('has rendered', item)
   const [count, setCount] = useState<number>(0);
 
   const handleCount = useCallback((e) => {
