@@ -3,8 +3,8 @@ export const restaurant = {
   location: 'Sydney',
   menu : {
   ramen : [
-          {name: 'Tonkatsu', options: ['Garlic', 'Chilli']},
-          {name: 'Shoyu', options: ['Garlic', 'Chilli', 'Extra egg', 'Extra Pork']},
+          {name: 'Tonkatsu', options: ['Garlic', 'Chilli'], size: []},
+          {name: 'Shoyu', options: ['Garlic', 'Chilli', 'Extra egg', 'Extra Pork'], size: []},
           {name: 'Tsukemen', sizes: ['Small', 'Medium', 'Large', 'X-Large'], options: ['Pork', 'Anchovy', 'Shrimp']},
       ]
   }

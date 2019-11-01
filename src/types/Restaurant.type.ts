@@ -1,3 +1,5 @@
+
+
 export interface IRestaurant {
   name: string,
   location: string,

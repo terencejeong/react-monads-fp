@@ -6,7 +6,7 @@ import './App.css';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <MenuContainer />
+      {/* <MenuContainer /> */}
       <MenuMonadContainer />
     </div>
   );
